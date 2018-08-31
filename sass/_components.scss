@@ -1,0 +1,74 @@
+.primary-side-nav {
+    .menu {
+        display: flex;
+        flex-direction: column;
+       
+        .item {
+            display: flex;
+            font-size: 2rem;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .tooltip {
+            width: 10rem;
+            visibility: hidden;
+            background-color: var(--tertiary-color);
+            padding: 1rem;
+            color: var(--secondary-light-color);
+            border-radius: .5rem;
+            font-size: 1.2rem;
+            position: absolute;
+            text-align: center;
+            left: 9rem;
+            
+        }
+
+        .tooltip:before{
+            content:'';
+            display:block;
+            width:0;
+            height:0;
+            position:absolute;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent; 
+            border-right: 8px solid var(--tertiary-color);
+            left: -.8rem;
+            
+            top: 1rem;
+        }
+
+        .item:hover .tooltip {
+            visibility: visible;
+        }
+
+        .item:first-child {
+            background-color: var(--primary-color);
+            padding: 1.5rem;
+        }
+
+        .item:first-child a {
+            color: var(--secondary-light-color);
+            font-size: 3rem;
+        }
+
+        .item:not(:first-child) {
+            border-bottom: var(--tertiary-medium-color) 1px solid;
+            transition: color .3s;
+        }
+
+        .item:not(:first-child) a {
+            color: var(--secondary-medium-color);
+            cursor: pointer;
+            padding: 1.5rem;
+        }
+
+        
+        .item:not(:first-child) a:hover {
+            color: var(--secondary-light-color);
+        }
+
+
+    }
+}

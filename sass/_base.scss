@@ -1,0 +1,30 @@
+:root {
+    --primary-color: #c23616;
+    --secondary-color: #dcdde1;
+    --secondary-medium-color: #969696;
+    --secondary-light-color: #FFF;
+    --tertiary-color: #222;
+    --tertiary-medium-color: #2d2d2d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}

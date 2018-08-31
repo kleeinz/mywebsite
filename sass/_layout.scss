@@ -1,0 +1,40 @@
+.container {
+    height: 100vh;
+    background-color: var(--secondary-color);;
+    display: flex;
+    flex-direction: row;
+
+    .primary {
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex: 0 0 auto;
+
+        .primary-side-nav {
+            width: 7.5rem;
+            height: 100vh;
+            background-color: var(--tertiary-color);
+            flex: 0 0 auto;
+        }
+
+        .primary-gallery {
+            width: 100%;
+            height: 100vh;
+            background-image: url(../imgs/3.jpg);
+            background-size: cover;
+            background-position: center;
+            flex: 1 1 auto;
+        }
+    }
+
+    .secondary {
+        height: 100vh;
+        width: 50%;
+        background-image: url(../imgs/2.jpg);
+        background-size: cover;
+        background-position: center;
+        flex: 1 1 auto;
+        overflow: auto;
+    }
+}

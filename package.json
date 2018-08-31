@@ -1,0 +1,14 @@
+{
+  "name": "mypersonalisbetter",
+  "version": "1.0.0",
+  "description": "This is my personal website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Christian Trejo",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
